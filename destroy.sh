@@ -34,5 +34,5 @@ kubectl delete certificates.cert-manager.io nats-client-tls
 kubectl delete secret nats-ca
 kubectl delete secret nats-server-tls
 kubectl delete secret nats-client-tls
-kubectl delete pod --force --grace-period=0 nats-setup
+kubectl delete pod --force --grace-period=0 --ignore-not-found nats-setup
 
