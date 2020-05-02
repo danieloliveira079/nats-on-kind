@@ -28,7 +28,11 @@ kubectl delete svc nats-prometheus
 kubectl delete svc nats-surveyor-prometheus
 kubectl delete svc prometheus
 kubectl delete svc prometheus-operator
+kubectl delete certificates.cert-manager.io nats-ca
+kubectl delete certificates.cert-manager.io nats-server-tls
+kubectl delete certificates.cert-manager.io nats-client-tls
 kubectl delete secret nats-ca
 kubectl delete secret nats-server-tls
 kubectl delete secret nats-client-tls
+kubectl delete pod --force --grace-period=0 nats-setup
 
