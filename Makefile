@@ -1,8 +1,8 @@
 .PHONY: build load install destroy
 
-REPO ?= danieloliv079
+REPO ?= danieloliv
 IMAGE ?= nats-on-kind-setup
-TAG ?= v0.1
+TAG ?= $(shell git rev-parse --short HEAD)
 CLUSTER_NAME ?= nats-cluster
 
 default: install
@@ -18,3 +18,9 @@ install: build load
 
 destroy:
 		./destroy.sh
+
+push:
+		docker push $(REPO)/$(IMAGE):$(TAG)
+
+docker: build push
+		
