@@ -3,7 +3,7 @@
 REPO ?= danieloliv079
 IMAGE ?= nats-on-kind-setup
 TAG ?= v0.1
-CLUSTER_NAME ?= kind
+CLUSTER_NAME ?= nats-cluster
 
 default: install
 
