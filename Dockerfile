@@ -13,7 +13,7 @@ COPY nats-server /setup/nats-server
 COPY nats-streaming-server /setup/nats-streaming-server
 COPY tools /setup/tools
 
-COPY nats-setup.sh nsc-setup.sh bootconfig.sh /usr/local/bin/
+COPY scripts/nats-setup.sh scripts/nsc-setup.sh scripts/bootconfig.sh /usr/local/bin/
 
 ENTRYPOINT []
 CMD ["/bin/sleep", "300"]
