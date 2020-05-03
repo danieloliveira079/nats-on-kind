@@ -4,7 +4,7 @@ set -eu
 
 NATS_K8S_VERSION=${PWD}
 NATS_BOOTSTRAP_YML=${DEFAULT_NATS_BOOTSTRAP_YML:=$NATS_K8S_VERSION/bootstrap-policy.yml}
-NATS_SETUP_IMAGE=${DEFAULT_NATS_SETUP_IMAGE:=danieloliv079/nats-on-kind-setup:v0.1}
+NATS_SETUP_IMAGE=${DEFAULT_NATS_SETUP_IMAGE:=danieloliv/nats-on-kind-setup:v0.1}
 
 # Apply policy required to be able to create the resources.
 kubectl apply -f "$NATS_BOOTSTRAP_YML"
