@@ -67,6 +67,8 @@ $ make destroy
 
 The output from the setup process will show you some possibilities of how to interact with the NATS server that has been deployed. Additionally, you can open the Grafana dashboard for checking metrics. If the setup completed successfully the output should be something similar to:
 
+Original Script: https://github.com/nats-io/k8s/blob/master/setup/nats-setup.sh#L305
+
 ```
 === Getting started
 
