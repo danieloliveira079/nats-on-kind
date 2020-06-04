@@ -115,7 +115,7 @@ spec:
           valueFrom:
             fieldRef:
               fieldPath: status.hostIP
-        image: danieloliv079/nats-on-kind-setup:v0.1
+        image: danieloliv/nats-on-kind-setup:v0.1
         imagePullPolicy: IfNotPresent
         volumeMounts:
         - mountPath: /etc/nats-config/advertise
